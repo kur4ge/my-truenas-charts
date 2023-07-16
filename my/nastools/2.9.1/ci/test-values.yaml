@@ -18,7 +18,7 @@ extraAppVolumeMounts:
   readOnly: true
 hostNetwork: false
 NASToolsServiceTCP:
-  port: 3000
+  port: 33000
 timezone: Etc/UTC
 updateStrategy: Recreate
 global: {}

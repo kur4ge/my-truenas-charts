@@ -115,12 +115,12 @@ questions:
       type: dict
       attrs:
         - variable: port
-          label: "Port to expose for NASTools UI"
+          label: "Port to expose for NASTools UI，The default is port 3000, you need to manually modify Yaml"
           schema:
             type: int
-            min: 3000
+            min: 30000
             max: 65535
-            default: 3000
+            default: 33000
 
   - variable: appVolumeMounts
     label: "NASTools Storage"

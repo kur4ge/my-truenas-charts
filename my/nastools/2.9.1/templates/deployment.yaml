@@ -29,7 +29,7 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
           ports:
           - name: pms
             protocol: TCP
-            containerPort: 3000
+            containerPort: 33000
           {{- if .Values.hostNetwork }}
             hostPort: {{ .Values.NASToolsServiceTCP.port }}
           {{- else }}
@@ -49,12 +49,12 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
             {{ $envList = mustAppend $envList (dict "name" "NASTOOL_AUTO_UPDATE" "value" .Values.autoUpdate) }}
             {{ $envList = mustAppend $envList (dict "name" "NASTOOL_CN_UPDATE" "value" .Values.cnUpdate) }}
             {{ $envList = mustAppend $envList (dict "name" "REPO_URL" "value" .Values.repoURL) }}
-            {{ $envList = mustAppend $envList (dict "name" "PMS_INTERNAL_ADDRESS" "value" (printf "http://%s:3000" (include "common.names.fullname" .))) }}
+            {{ $envList = mustAppend $envList (dict "name" "PMS_INTERNAL_ADDRESS" "value" (printf "http://%s:33000" (include "common.names.fullname" .))) }}
             {{ $envList = mustAppend $envList (dict "name" "PMS_IMAGE" "value" (printf "%s:%s" .Values.image.repository .Values.image.tag))}}
             {{ include "common.containers.environmentVariables" (dict "environmentVariables" $envList) | nindent 12 }}
           readinessProbe:
             tcpSocket:
-              port: 3000
+              port: 33000
             initialDelaySeconds: 10
             periodSeconds: 10
             timeoutSeconds: 5
@@ -62,7 +62,7 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
             successThreshold: 2
           livenessProbe:
             tcpSocket:
-              port: 3000
+              port: 33000
             initialDelaySeconds: 10
             periodSeconds: 10
             timeoutSeconds: 5
@@ -70,7 +70,7 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
             successThreshold: 1
           startupProbe:
             tcpSocket:
-              port: 3000
+              port: 33000
             initialDelaySeconds: 10
             periodSeconds: 5
             timeoutSeconds: 2
