@@ -1,0 +1,23 @@
+name: nastools
+description: NAS Tools Server
+annotations:
+  title: NASTools
+type: application
+version: 2.9.1
+apiVersion: v2
+appVersion: 1.32.4.7195
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: kur4ge
+    url: https://www.kur4ge.com/
+    email: i@kur4ge.com
+dependencies:
+  - name: common
+    repository: file://../../../common/2304.0.1
+    version: 2304.0.1
+home: https://github.com/NAStool/nas-tools
+icon: https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png
+sources:
+  - https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png
+keywords:
+  - NASTools

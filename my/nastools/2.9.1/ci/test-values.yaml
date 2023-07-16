@@ -1,0 +1,24 @@
+appVolumeMounts:
+  config:
+    emptyDir: true
+    mountPath: /config
+  data:
+    emptyDir: true
+    mountPath: /data
+autoUpdate: false
+cnUpdate: false
+repoURL: https://github.com/NAStool/nas-tools.git
+dnsConfig:
+  options: []
+emptyDirVolumes: true
+environmentVariables: []
+extraAppVolumeMounts:
+- hostPath: /mnt/extras/hello
+  mountPath: /mnt/extras
+  readOnly: true
+hostNetwork: false
+NASToolsServiceTCP:
+  port: 3000
+timezone: Etc/UTC
+updateStrategy: Recreate
+global: {}

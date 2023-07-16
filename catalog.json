@@ -2235,5 +2235,48 @@
             ],
             "icon_url": "https://syncthing.net/img/logo-horizontal.svg"
         }
+    },
+    "my": {
+        "nas-tool": {
+            "app_readme": "<h1>NASTool</h1>\n<p>NASTool chart is a chart designed to deploy NASTool in a TrueNAS SCALE kubernetes cluster.</p>",
+            "categories": [
+                "media"
+            ],
+            "description": "NASTool Server",
+            "healthy": true,
+            "healthy_error": null,
+            "home": "https://github.com/NAStool/nas-tools",
+            "location": "/__w/charts/charts/my/nastools",
+            "latest_version": "2.9.1",
+            "latest_app_version": "2.9.1",
+            "latest_human_version": "2.9.1",
+            "last_update": "2023-02-13 00:00:00",
+            "name": "nastool",
+            "recommended": false,
+            "title": "NASTool",
+            "maintainers": [
+                {
+                    "name": "kur4ge",
+                    "url": "https://kur4ge.com/",
+                    "email": "i@kur4ge.com"
+                }
+            ],
+            "tags": [
+                "entertainment",
+                "movies",
+                "series",
+                "tv",
+                "streaming"
+            ],
+            "screenshots": [
+                "https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png"
+            ],
+            "sources": [
+                "https://hub.docker.com/r/nastools/nas-tools/",
+                "https://github.com/wangyan/nas-tools",
+                "https://github.com/NAStool/nas-tools"
+            ],
+            "icon_url": "https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png"
+        }
     }
 }
