@@ -4,10 +4,10 @@
 {{ $params := . }}
 {{ $_ := set $params "commonService" (dict "ports" $ports ) }}
 {{ if .Values.hostNetwork }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp-cluster-ip" }}
+{{ $_ := set $params.commonService "nameSuffix" "langwatch-cluster-ip" }}
 {{ $_1 := set $params.commonService "type" "ClusterIP" }}
 {{ else }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp" }}
+{{ $_ := set $params.commonService "nameSuffix" "langwatch" }}
 {{ $_1 := set $params.commonService "type" "NodePort" }}
 {{ end }}
 {{ include "common.classes.service" $params }}
@@ -18,10 +18,10 @@
 {{ $params := . }}
 {{ $_ := set $params "commonService" (dict "ports" $ports ) }}
 {{ if .Values.hostNetwork }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp-cluster-ip" }}
+{{ $_ := set $params.commonService "nameSuffix" "langwatch_nlp-cluster-ip" }}
 {{ $_1 := set $params.commonService "type" "ClusterIP" }}
 {{ else }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp" }}
+{{ $_ := set $params.commonService "nameSuffix" "langwatch_nlp" }}
 {{ $_1 := set $params.commonService "type" "NodePort" }}
 {{ end }}
 {{ include "common.classes.service" $params }}
@@ -32,10 +32,10 @@
 {{ $params := . }}
 {{ $_ := set $params "commonService" (dict "ports" $ports ) }}
 {{ if .Values.hostNetwork }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp-cluster-ip" }}
+{{ $_ := set $params.commonService "nameSuffix" "langevals-cluster-ip" }}
 {{ $_1 := set $params.commonService "type" "ClusterIP" }}
 {{ else }}
-{{ $_ := set $params.commonService "nameSuffix" "tcp" }}
+{{ $_ := set $params.commonService "nameSuffix" "langevals" }}
 {{ $_1 := set $params.commonService "type" "NodePort" }}
 {{ end }}
 {{ include "common.classes.service" $params }}
