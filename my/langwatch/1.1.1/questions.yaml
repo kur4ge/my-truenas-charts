@@ -99,7 +99,7 @@ questions:
           group: "Networking"
           schema:
             type: int
-            min: 30000
+            min: 1024
             max: 65535
             default: 35560
             label: "Port to expose for LangWatch UI, The default is port 35560, you need to manually modify Yaml"
@@ -135,7 +135,7 @@ questions:
           group: "Networking"
           schema:
             type: int
-            min: 30000
+            min: 1024
             max: 65535
             default: 35561
             label: "Port to expose for LangWatch NLP, The default is port 35561, you need to manually modify Yaml"
@@ -171,7 +171,7 @@ questions:
           group: "Networking"
           schema:
             type: int
-            min: 30000
+            min: 1024
             max: 65535
             default: 35562
             label: "Port to expose for LangEvals, The default is port 35562, you need to manually modify Yaml"
