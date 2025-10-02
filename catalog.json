@@ -2237,7 +2237,7 @@
         }
     },
     "my": {
-        "nas-tool": {
+        "nas-tools": {
             "app_readme": "<h1>NASTool</h1>\n<p>NASTool chart is a chart designed to deploy NASTool in a TrueNAS SCALE kubernetes cluster.</p>",
             "categories": [
                 "media"
@@ -2253,7 +2253,7 @@
             "last_update": "2023-02-13 00:00:00",
             "name": "nastools",
             "recommended": false,
-            "title": "NASTool",
+            "title": "NASTools",
             "maintainers": [
                 {
                     "name": "kur4ge",
