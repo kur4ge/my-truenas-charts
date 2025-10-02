@@ -72,7 +72,7 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
             timeoutSeconds: 2
             failureThreshold: 60
             successThreshold: 1
-        - name: langwatch_nlp
+        - name: langwatch-nlp
           {{ include "common.resources.limitation" . | nindent 10 }}
           {{ include "common.containers.imageConfig" .Values.langwatch_nlp.image | nindent 10 }}
           volumeMounts: {{ include "common.storage.configureAppVolumeMountsInContainer" .Values | nindent 12 }}
