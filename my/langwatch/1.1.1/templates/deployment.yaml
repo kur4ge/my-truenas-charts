@@ -84,7 +84,7 @@ spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
               {{ end }}
             {{ end }}
           ports:
-          - name: langwatch_nlp
+          - name: langwatch-nlp
             protocol: TCP
             containerPort: 5561
           {{- if .Values.hostNetwork }}

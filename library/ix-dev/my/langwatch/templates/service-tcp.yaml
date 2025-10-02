@@ -14,7 +14,7 @@
 
 {{ $svc := .Values.langwatch_nlp }}
 {{ $ports := list }}
-{{ $ports = mustAppend $ports (dict "name" "langwatch-nlp" "port" $svc.port "nodePort" $svc.port "targetPort" "langwatch_nlp") }}
+{{ $ports = mustAppend $ports (dict "name" "langwatch-nlp" "port" $svc.port "nodePort" $svc.port "targetPort" "langwatch-nlp") }}
 {{ $params := . }}
 {{ $_ := set $params "commonService" (dict "ports" $ports ) }}
 {{ if .Values.hostNetwork }}
