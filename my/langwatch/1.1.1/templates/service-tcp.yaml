@@ -1,7 +1,9 @@
-{{ $svc := .Values.langwatch }}
 {{ $ports := list }}
+{{ $svc := .Values.langwatch }}
 {{ $ports = mustAppend $ports (dict "name" "langwatch" "port" $svc.port "nodePort" $svc.port "targetPort" "langwatch") }}
+{{ $svc = .Values.langwatch_nlp }}
 {{ $ports = mustAppend $ports (dict "name" "langwatch-nlp" "port" $svc.port "nodePort" $svc.port "targetPort" "langwatch-nlp") }}
+{{ $svc = .Values.langevals }}
 {{ $ports = mustAppend $ports (dict "name" "langevals" "port" $svc.port "nodePort" $svc.port "targetPort" "langevals") }}
 {{ $params := . }}
 {{ $_ := set $params "commonService" (dict "ports" $ports ) }}
