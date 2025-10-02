@@ -29,7 +29,7 @@ portals:
     host:
       - "$node_ip"
     ports:
-      - "$variable-LangWatchServiceTCP.port"
+      - "$variable-langwatch.port"
     path: "/"
 
 questions:
