@@ -1,0 +1,32 @@
+golbal: {}
+timezone: Etc/UTC
+extraAppVolumeMounts: []
+appVolumeMounts: []
+hostNetwork: true
+dnsConfig:
+  options: []
+
+langwatch:
+  image:
+    pullPolicy: IfNotPresent
+    repository: langwatch/langwatch
+    tag: latest
+  port: 35560
+  environmentVariables: []
+
+langwatch_nlp:
+  image:
+    pullPolicy: IfNotPresent
+    repository: langwatch/langwatch_nlp
+    tag: latest
+  port: 35561
+  environmentVariables: []
+
+langevals:
+  image:
+    pullPolicy: IfNotPresent
+    repository: langwatch/langevals
+    tag: latest
+  port: 35562
+  environmentVariables: []
+

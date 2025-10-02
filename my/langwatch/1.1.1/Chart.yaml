@@ -1,0 +1,23 @@
+name: langwatch
+description: LangWatch is the leading LLM Ops platform on evaluation capabilities and user-friendly collaboration
+annotations:
+  title: LangWatch
+type: application
+version: 1.1.1
+apiVersion: v2
+appVersion: 1.1.1
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: kur4ge
+    url: https://www.kur4ge.com/
+    email: i@kur4ge.com
+dependencies:
+  - name: common
+    repository: file://../../../common/2304.0.1
+    version: 2304.0.1
+home: https://github.com/langwatch/langwatch
+icon: https://raw.githubusercontent.com/langwatch/langwatch/main/assets/logo-header.webp
+sources:
+  - https://raw.githubusercontent.com/langwatch/langwatch/main/assets/logo-header.webp
+keywords:
+  - LangWatch
