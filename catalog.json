@@ -2277,6 +2277,46 @@
                 "https://github.com/NAStool/nas-tools"
             ],
             "icon_url": "https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png"
+        },
+        "lang-watch": {
+            "app_readme": "<h1>Langwatch</h1>\n<p>Langwatch chart is a chart designed to deploy Langwatch in a TrueNAS SCALE kubernetes cluster.</p>",
+            "categories": [
+                "media"
+            ],
+            "description": "Langwatch Server",
+            "healthy": true,
+            "healthy_error": null,
+            "home": "https://github.com/langwatch/langwatch",
+            "location": "/__w/charts/charts/my/langwatch",
+            "latest_version": "1.1.1",
+            "latest_app_version": "1.1.1",
+            "latest_human_version": "1.1.1",
+            "last_update": "2025-10-02 00:00:00",
+            "name": "langwatch",
+            "recommended": false,
+            "title": "Langwatch",
+            "maintainers": [
+                {
+                    "name": "kur4ge",
+                    "url": "https://kur4ge.com/",
+                    "email": "i@kur4ge.com"
+                }
+            ],
+            "tags": [
+                "entertainment",
+                "movies",
+                "series",
+                "tv",
+                "streaming"
+            ],
+            "screenshots": [
+                "https://raw.githubusercontent.com/langwatch/langwatch/main/assets/logo-header.webp"
+            ],
+            "sources": [
+                "https://hub.docker.com/r/langwatch/langwatch",
+                "https://github.com/langwatch/langwatch"
+            ],
+            "icon_url": "https://raw.githubusercontent.com/langwatch/langwatch/main/assets/logo-header.webp"
         }
     }
 }
